@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Library of Hollow Hearts</title>
+
+  <meta property="og:title" content="Library of Hollow Hearts">
+  <meta property="og:description" content="A collection of Minecraft-style written hearts.">
+  <meta property="og:image" content="https://YOURUSERNAME.github.io/Library-of-Hollow-Hearts/cover.png">
+  <meta property="og:url" content="https://YOURUSERNAME.github.io/Library-of-Hollow-Hearts/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      flex-direction: column;
+      font-family: Minecraft;
+      color: white;
+      overflow-y: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .subtitle {
+      opacity: 0.7;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .library {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 35px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .book-link {
+      text-decoration: none;
+      color: white;
+    }
+
+    .book-item {
+      height: 210px;
+      background: #3a2418;
+      border: 4px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 12px;
+      image-rendering: pixelated;
+      transition: 0.2s;
+      box-shadow:
+        inset -10px 0 rgba(0,0,0,0.25),
+        0 0 0 4px rgba(255,255,255,0.03);
+    }
+
+    .book-item:hover {
+      transform: translateY(-8px);
+    }
+
+    .book-title {
+      line-height: 24px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Library of Hollow Hearts</h1>
+<p class="subtitle">A collection of quiet feelings.</p>
+
+<div class="library">
+
+  <a class="book-link" href="books/first-amour.html">
+    <div class="book-item">
+      <div class="book-title">
+        First<br>Amour
+      </div>
+    </div>
+  </a>
+
+  <a class="book-link" href="books/silent-letters.html">
+    <div class="book-item">
+      <div class="book-title">
+        Silent<br>Letters
+      </div>
+    </div>
+  </a>
+
+  <a class="book-link" href="books/almost.html">
+    <div class="book-item">
+      <div class="book-title">
+        Almost
+      </div>
+    </div>
+  </a>
+
+</div>
+
+</body>
+</html>
